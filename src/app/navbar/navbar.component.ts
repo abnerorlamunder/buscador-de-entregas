@@ -10,7 +10,16 @@ import {ChangeDetectorRef, Component} from '@angular/core';
 export class NavbarComponent {
   mobileQuery: MediaQueryList;
 
-  fillerNav = Array(50).fill(0).map((_, i) => `Nav Item ${i + 1}`);
+  fillerNav = [
+    {
+      display: 'Home',
+      link: '/home'
+    },
+    {
+      display: 'Buscar',
+      link: '/buscar'
+    }
+  ]
 
   fillerContent = Array(50).fill(0).map(() =>
       `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
